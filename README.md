@@ -19,7 +19,7 @@ Finally, I created a _Pareto Chart_ (combining a bar chart and a line chart) to 
 
 ## Setup
 
-- Python 3.10+
+- Python 3.10+, dash 3.3.0, plotly 6.4.0
 - Installing the required libraries:
     + All the libraries required for this project (pandas, plotly, dash, etc.) are listed in the `requirements.txt` file.
     + In the same folder, there is a `.bat` file that can be run to automatically install all required libraries.
