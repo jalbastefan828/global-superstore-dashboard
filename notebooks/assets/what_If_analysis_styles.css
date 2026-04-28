@@ -1,0 +1,183 @@
+
+.what_if_analysis_slider{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    width: 250px;
+}
+.what_if_analysis_slider .rc-slider-track {
+    background-color: #bc9d64;  
+    height: 4px;
+    
+    top: 50%;                
+    transform: translateY(-50%);               
+}
+.what_if_analysis_slider .rc-slider-rail {
+    background-color: #f5e1b8;   
+    height: 4px;
+
+    top: 50%;                
+    transform: translateY(-50%);
+}
+.what_if_analysis_slider .rc-slider-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #d8c399; 
+    border: 0px solid #d8c399;
+
+    margin-left: 0;
+    margin-right: 0;
+    top: 50% !important;              
+    transform: translate(-50%, -50%) !important; 
+    margin-top: 0 !important; 
+}
+.what_if_analysis_slider .rc-slider-dot-active {
+    width: 10px;
+    height: 10px;     
+    background-color: #c86438;
+    border: 0px solid #c86438;
+}
+.what_if_analysis_slider .rc-slider-handle {
+    width: 12px;
+    height: 12px;     
+    background-color: #dcc8a0; 
+    border: 3px solid #9a824f;
+    box-shadow: none;
+
+    top: 50% !important;              
+    transform: translate(-50%, -50%) !important; 
+    margin-top: 0 !important;
+}
+.what_if_analysis_slider .rc-slider-handle:hover {
+    width: 13px !important;
+    height: 13px !important;
+    border: 5px solid #9a824f !important;
+}
+.what_if_analysis_slider .rc-slider-handle:focus {
+    width: 13px !important;
+    height: 13px !important;
+    border: 5px solid #9a824f !important;
+}
+.what_if_analysis_slider .rc-slider-mark-text {
+    font-size: 10px;
+    color: #0D1321; 
+    font-family: Arial;
+    font-weight: bold;
+    top: 0px;
+    white-space: nowrap !important;
+}
+
+
+
+
+
+.what_if_analysis_dropdown .Select-control {
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 2px #e7d7b7;
+    background-color: #fdf0d5;
+    border: 0px;
+    height: 25px;
+    min-height: 1px;
+}
+.what_if_analysis_dropdown .Select-control:hover {
+    box-shadow: 0px 0px 0px 4px #e7d7b7;
+    border: 0px;
+    border-radius: 8px;
+}
+.what_if_analysis_dropdown.is-focused > .Select-control {
+    box-shadow: 0px 0px 0px 4px #e7d7b7;
+    border: 0px;
+    border-radius: 8px;
+}
+.what_if_analysis_dropdown.is-open > .Select-control {
+    box-shadow: 0px 0px 0px 4px #d3bb8d;
+    border: 0px;
+    border-radius: 10px;
+}
+.what_if_analysis_dropdown .Select-input {
+    height: 25px;
+    font-family: Arial;
+    font-size: 12px;
+    position: absolute;
+    top: -15%;
+    left: 2.5%;
+    display: flex;
+}
+.what_if_analysis_dropdown .Select-value-label{
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+    top: -20%;
+    left: 10%;
+}
+.what_if_analysis_dropdown .Select-menu-outer {
+    width: 125px;
+    font-family: Arial;
+    font-size: 12px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 2px #e7d7b7;
+    background-color: #fdf0d5;
+    border: 0px;
+}
+.what_if_analysis_dropdown .VirtualizedSelectOption:hover{
+    background: #e6d5b4;
+    color: rgb(97, 97, 97);
+    border-radius: 5px;
+}
+.what_if_analysis_dropdown .VirtualizedSelectFocusedOption {
+    background: #e6d5b4;
+    color: rgb(97, 97, 97);
+    border-radius: 5px;
+}
+.what_if_analysis_dropdown .VirtualizedSelectSelectedOption{
+    background: #e07e50;
+    color: rgb(238, 232, 223); 
+    border-radius: 8px; 
+}
+
+
+
+
+
+.what_if_analysis_button {
+	background-color:#fdf0d5;
+	border-radius:8px;
+	border: 0px;
+	box-shadow: 0px 0px 0px 2px #e7d7b7;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-weight:bold;
+	padding:2px 2px;
+	text-decoration:none;
+    width: 45px;
+    height: 25px;
+    z-index: 10;
+    position: relative;
+	color: #333333;
+	font-family: Arial;
+    font-weight: 600;
+	font-size: 10px;
+    text-align: center;
+}
+.what_if_analysis_button:hover {
+	box-shadow: 0px 0px 0px 3px #e7d7b7;
+}
+.what_if_analysis_button:active {
+	border-radius: 15px;
+	box-shadow: 0px 0px 0px 3px #d3bb8d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

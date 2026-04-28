@@ -1,0 +1,93 @@
+.data_explorer_dropdown .Select-control {
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 2px #e7d7b7;
+    background-color: #fdf0d5;
+    border: 0px;
+}
+.data_explorer_dropdown .Select-control:hover {
+    box-shadow: 0px 0px 0px 4px #e7d7b7;
+    border: 0px;
+    border-radius: 8px;
+}
+.data_explorer_dropdown.is-focused > .Select-control {
+    box-shadow: 0px 0px 0px 4px #e7d7b7;
+    border: 0px;
+    border-radius: 8px;
+}
+.data_explorer_dropdown.is-open > .Select-control {
+    box-shadow: 0px 0px 0px 4px #d3bb8d;
+    border: 0px;
+    border-radius: 10px;
+}
+.data_explorer_dropdown .Select-placeholder {
+    font-family: Arial;
+
+    top: 3%;
+    left: 2%;
+}
+.data_explorer_dropdown .Select-value-label{
+    font-family: Arial;
+    font-weight: 600;
+   
+    position: relative;
+    top: 3%;
+    left: 2%;
+}
+.data_explorer_dropdown .Select-menu-outer {
+    width: 200px;
+    font-family: Arial;
+
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 2px #e7d7b7;
+    background-color: #fdf0d5;
+    border: 0px;
+}
+.data_explorer_dropdown .VirtualizedSelectOption:hover{
+    background: #e6d5b4;
+    color: rgb(97, 97, 97);
+    border-radius: 5px;
+}
+.data_explorer_dropdown .VirtualizedSelectFocusedOption {
+    background: #e6d5b4;
+    color: rgb(97, 97, 97);
+    border-radius: 5px;
+}
+.data_explorer_dropdown .VirtualizedSelectSelectedOption{
+    background: #e07e50;
+    color: rgb(238, 232, 223); 
+    border-radius: 8px; 
+}
+
+
+
+
+
+.data_explorer_button {
+	background-color:#fdf0d5;
+	border-radius:12px;
+	border: 0px;
+	box-shadow: 0px 0px 0px 2px #e7d7b7;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:8px 16px;
+	text-decoration:none;
+    width: 65px;
+    height: 35px;
+    z-index: 10;
+    position: relative;
+	color: #333333;
+	font-family: Arial;
+    font-weight: 600;
+	font-size: 15px;
+}
+.data_explorer_button:hover {
+	box-shadow: 0px 0px 0px 4px #e7d7b7;
+}
+.data_explorer_button:active {
+	border-radius: 15px;
+	box-shadow: 0px 0px 0px 4px #d3bb8d;
+}
