@@ -1,15 +1,19 @@
 # Global Superstore Dashboard
-
+![overview_image](images/overview.png)
 This project analyzes sales data from the Global Superstore dataset, a fictional online store used for educational purposes. The project is divided into two notebooks:
 ### First Notebook: Data Processing & Analysis
 I collected the data from an Excel file, then cleaned and processed it. To make the analysis more complex, I created new columns based on the existing data. I also optimized the dataframe by using the correct data types for each series. After cleaning, I performed a simple analysis using Pandas aggregation functions. This helped me discover interesting facts about the data, such as potential typos, outliers, and important relationships between categories, countries, customers, and markets.
 ### Second Notebook: Interactive Dashboard
+![explorer_image](images/explorer.png)
 I built a complex dashboard using `Dash` and `Plotly`. This dashboard includes:
 - _Key Performance Indicators (KPIs)_, a histogram, and a boxplot for basic statistics;
 - _Dynamic Charts_: A line chart for trends over time, a bar chart for comparisons, and a scatter plot with a correlation line to show relationships;
 - _Full Interactivity_: You can apply filters and change metrics for a more precise analysis.
 ### Final Section: What-If Analysis
-I included a _"What-If" analysis_ with three sliders to modify discounts, product costs, and shipping costs. Finally, I created a _Pareto Chart_ (combining a bar chart and a line chart) to show the most important factors in the business.
+I included a _"What-If" analysis_ with three sliders to modify discounts, product costs, and shipping costs. 
+![simulation_image](images/simulation.png)
+Finally, I created a _Pareto Chart_ (combining a bar chart and a line chart) to show the most important factors in the business.
+![pareto_image](images/pareto.png)
 
 ---
 
