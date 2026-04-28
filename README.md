@@ -1,12 +1,15 @@
-# Weather Data Analysis for Romania
+# Global Superstore Dashboard
 
-This is an educational project created as part of my learning journey, aimed at applying what I’ve learned about data processing and visualization.  
-The project collects weather data for Romania using a public weather API, covering the last 6 days, today, and the forecast for the next two days (9 days in total), based on the free plan.  
-
-After collecting the data, the project cleans, organizes, and analyzes it, then automatically generates a PDF weather bulletin. The bulletin includes charts and short written analyses for weather conditions across Romania and its counties.  
-The report contains information about temperature, precipitation, cloud coverage, humidity, snowfall, and wind, presented in a clear and accessible way.  
-
-This project is intended for educational purposes and as a practical exercise in working with real-world data.
+This project analyzes sales data from the Global Superstore dataset, a fictional online store used for educational purposes. The project is divided into two notebooks:
+### First Notebook: Data Processing & Analysis
+I collected the data from an Excel file, then cleaned and processed it. To make the analysis more complex, I created new columns based on the existing data. I also optimized the dataframe by using the correct data types for each series. After cleaning, I performed a simple analysis using Pandas aggregation functions. This helped me discover interesting facts about the data, such as potential typos, outliers, and important relationships between categories, countries, customers, and markets.
+### Second Notebook: Interactive Dashboard
+I built a complex dashboard using `Dash` and `Plotly`. This dashboard includes:
+- _Key Performance Indicators (KPIs)_, a histogram, and a boxplot for basic statistics;
+- _Dynamic Charts_: A line chart for trends over time, a bar chart for comparisons, and a scatter plot with a correlation line to show relationships;
+- _Full Interactivity_: You can apply filters and change metrics for a more precise analysis.
+### Final Section: What-If Analysis
+I included a _"What-If" analysis_ with three sliders to modify discounts, product costs, and shipping costs. Finally, I created a _Pareto Chart_ (combining a bar chart and a line chart) to show the most important factors in the business.
 
 ---
 
@@ -14,7 +17,7 @@ This project is intended for educational purposes and as a practical exercise in
 
 - Python 3.10+
 - Installing the required libraries:
-    + All the libraries required for this project (pandas, matplotlib, reportlab, geopandas, etc.) are listed in the `requirements.txt` file.
+    + All the libraries required for this project (pandas, plotly, dash, etc.) are listed in the `requirements.txt` file.
     + In the same folder, there is a `.bat` file that can be run to automatically install all required libraries.
     + Alternatively, you can run: `py -m pip install -r requirements.txt`
     + If you are using Anaconda, these libraries can also be installed directly through Anaconda Navigator.
@@ -27,34 +30,22 @@ This project is intended for educational purposes and as a practical exercise in
 
 ## Data Sources
 
-- All weather data is downloaded via a public API from https://www.weatherapi.com/
-- Geographic data of Romania (county boundaries) is sourced from the OpenStreetMap database: https://osm-boundaries.com/
-
----
-
-## API Key
-
-Before running the code, you need to obtain an API key from https://www.weatherapi.com/ (free plan available).  
-Your API key must be copied into the `.env` file before executing the notebooks.
+The data was downloaded from Kaggle: https://www.kaggle.com/datasets/shekpaul/global-superstore
 
 ---
 
 ## Running the Project
 
-1. **Fetch Data**  
-    - Notebook: `notebooks/01_fetch_data.ipynb`  
-    - This notebook downloads weather data from the API and saves it in `data/raw/`.  
-    - Must be run first, before any data processing.
+1. **Data processing & data analysis**  
+    - Notebook: `notebooks/01_data_processing_and_analysis.ipynb`  
+    - This notebook reads the file from `data/raw/Global Superstore.xlsx`, cleans, processes, and analyzes the data, then saves it in `data/processed/`.  
 
-2. **Process Data**  
-    - Notebook: `notebooks/02_process_data.ipynb`  
-    - This notebook reads the files from `data/raw/`, cleans and processes the data, and saves it in `data/processed/`.  
-    - Must be run after `01_fetch_data.ipynb`.
-
-3. **Data Analysis & PDF Generation**  
-    - Notebook: `notebooks/03_data_analysis.ipynb`  
-    - This notebook reads all processed data and generates a PDF weather bulletin containing charts and analyses for weather across Romania.  
-    - Must be run after `02_process_data.ipynb`.
+2. **Data Visualization**  
+    - Notebook: `notebooks/02_data_visualization.ipynb`  
+    - Using the cleaned and processed data, this notebook creates the dashboard.  
+    - Must be run after `01_data_processing_and_analysis.ipynb`.
+      
+_**Once the script is running, you can access the dashboard by opening http://127.0.0.1:8050 in your web browser**_
 
 ---
 
