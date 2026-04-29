@@ -5,3 +5,4 @@ seaborn
 plotly==6.4.0
 dash==3.3.0
 statsmodels
+openpyxl
