@@ -1,8 +1,8 @@
 # Global Superstore Dashboard
 ![overview_image](images/overview.png)
-This project analyzes sales data from the Global Superstore dataset, a fictional online store used for educational purposes. The project is divided into two notebooks:
+An interactive business intelligence dashboard built with Dash and Plotly for exploring sales performance, profitability, customer behavior, and what-if business simulations using the Global Superstore dataset, a fictional online store used for educational purposes. The project is divided into two notebooks:
 ### First Notebook: Data Processing & Analysis
-I collected the data from an Excel file, then cleaned and processed it. To make the analysis more complex, I created new columns based on the existing data. I also optimized the dataframe by using the correct data types for each series. After cleaning, I performed a simple analysis using Pandas aggregation functions. This helped me discover interesting facts about the data, such as potential typos, outliers, and important relationships between categories, countries, customers, and markets.
+I collected the data from an Excel file, then cleaned and processed it. To make the analysis more complex, I created new columns based on the existing data. I also optimized the dataframe by using the correct data types for each series. After cleaning, I performed a simple analysis using Pandas aggregation functions. This helped me discover interesting facts about the data, such as potential typos, outliers, inconsistencies and important relationships and key business patterns across categories, countries, customers, and markets.
 ### Second Notebook: Interactive Dashboard
 ![explorer_image](images/explorer.png)
 I built a complex dashboard using `Dash` and `Plotly`. This dashboard includes:
@@ -21,8 +21,8 @@ Finally, I created a _Pareto Chart_ (combining a bar chart and a line chart) to 
 
 - Python 3.10+, dash 3.3.0, plotly 6.4.0
 - Installing the required libraries:
-    + All the libraries required for this project (pandas, plotly, dash, etc.) are listed in the `requirements.txt` file.
-    + In the same folder, there is a `.bat` file that can be run to automatically install all required libraries.
+    + All the libraries required for this project are listed in the `requirements.txt` file.
+    + In the same folder, there is a `install_requirements.bat` file that can be run to automatically install all required libraries.
     + Alternatively, you can run: `py -m pip install -r requirements.txt`
     + If you are using Anaconda, these libraries can also be installed directly through Anaconda Navigator.
 - Jupyter Notebook is required to run the notebooks:
