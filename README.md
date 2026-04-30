@@ -17,9 +17,21 @@ Finally, I created a _Pareto Chart_ (combining a bar chart and a line chart) to 
 
 ---
 
+## Features
+- Interactive KPI dashboard
+- Dynamic metric aggregation
+- Time-series analysis
+- Correlation analysis with trendlines
+- Profitability simulations
+- Pareto analysis
+- Multi-dimensional filtering
+- Responsive Plotly visualizations
+
+---
+
 ## Setup
 
-- Python 3.10+, dash 3.3.0, plotly 6.4.0
+- Python 3.10+ (Note: Dash 3.3.0 is strictly required for the UI components to display correctly; this will be fixed in a later update)
 - Installing the required libraries:
     + All the libraries required for this project are listed in the `requirements.txt` file.
     + In the same folder, there is a `install_requirements.bat` file that can be run to automatically install all required libraries.
