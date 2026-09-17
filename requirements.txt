@@ -9,5 +9,9 @@ openpyxl
 parquet
 pyarrow
 fastparquet
+<<<<<<< HEAD
 #v1
 #v1
+=======
+#v3
+>>>>>>> v2
