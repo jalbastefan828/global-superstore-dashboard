@@ -8,3 +8,4 @@ statsmodels
 openpyxl
 parquet
 pyarrow
+fastparquet
