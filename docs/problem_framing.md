@@ -97,6 +97,16 @@ By testing these hypotheses against the data, we can uncover root causes behind 
 * **Q6:** Is there a relationship between high return rates and other variables in the dataset (e.g., shipping costs, delivery delays, discounts)?
 * **Q7:** How significantly is overall profit affected when accounting for returned orders and their associated shipping costs?
 
+
+### D. How does the overall company performance look, which product sub-categories bring the highest profit, which countries have the highest sales, and how have key metrics evolved over time?
+* **Q1:** Which countries generate the highest total sales vs. the highest net profit?
+* **Q2:** Which countries achieve the lowest profit erosion?
+* **Q3:** What are the most profitable products, categories, and sub-categories?
+* **Q4:** Which products and categories have the lowest discount rates?
+* **Q5:** Which countries benefit from the lowest shipping costs?
+* **Q6:** How is the actual profit margin distributed across categories, markets, regions, and countries?
+* **Q7:** What were the most profitable months in each year (2011–2014)?
+
 <br>
 <br>
 
