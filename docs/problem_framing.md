@@ -11,6 +11,7 @@ Since this is a personal project, I simulated a real-world business environment 
 - We are giving too many discounts and losing money in some places. How can we fix our discount strategy to stay profitable?
 - Shipping costs are too high and delivery options look messy. How can we optimize shipping modes and order priorities?
 - We are seeing a lot of product returns across different customer types. Which customers or products are causing this, and why?
+- How does the overall company performance look, which product sub-categories bring the highest profit, which countries have the highest sales, and how have key metrics evolved over time?
 
 <br>
 <br>
