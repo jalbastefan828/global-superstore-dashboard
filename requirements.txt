@@ -10,3 +10,4 @@ openpyxl
 parquet
 pyarrow
 fastparquet
+scikit-learn
