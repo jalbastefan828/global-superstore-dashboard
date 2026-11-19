@@ -176,3 +176,26 @@
 # Returned products Analysis
 
 ## 1. Overview
+* **Orders and returns:** Out of 25,754 total orders, 907 were returned. This means 8,692 items came back, leaving 24,847 completed orders.
+* **Low return rate:** The return rate is low at 3.52%, which is a good sign.
+* **Lost profit:** Returns caused a profit loss of $94,935.25 (a 6.47% loss from the potential profit).
+* **Profit margins:** The actual profit margin is 11.43%, very close to the 11.61% potential margin, showing that returns do not hurt the final profit very much.
+
+## 2. Point-Biserial Correlation & Logistic Regression Analysis
+* **Weak overall relationships:** Even though some variables have a p-value below 0.05, their coefficients are extremely close to zero. This means no strong or meaningful relationships were found between most dataset variables and the return variable.
+* **Notable exceptions:** The only slightly stronger patterns appear in the Fasteners sub-category and in specific countries like Japan, Hong Kong, Mexico, and China.
+* **Higher coefficients:** These specific countries and sub-categories show higher coefficients mainly because they record higher volumes of returned products compared to others.
+
+## 3. Order Priority Analysis
+* **Return Rates:** All four priority categories show a very similar product return rate (around 4.1% to 4.7%).
+* **Profit Erosion:** Profit erosion differs across categories. While the overall average is 6.47%, the Low priority class is the most affected, with a profit erosion of 11.74%.
+* **Profit Margins:** There is a small anomaly where the Critical class has a higher actual profit margin (12.78%) than its potential profit margin (12.60%). This is probably because a large part of the returned products with this order priority were originally causing losses, and returning them actually improved the final margin.
+
+## 4. Market Analysis
+* **Regions with returns:** The only regions that recorded returned products are LATAM, APAC, and EU (while Canada, Africa, EMEA, and the US have 0 returns).
+* **Highest profit erosion:** The region with the highest profit erosion is APAC, reaching 10.67%.
+
+## 5. Country Analysis
+* **Highest return rate & erosion:** Japan has the highest return rate (28.80%) and the highest profit erosion (41.20%).
+* **Most returned products:** Mexico is the country with the highest volume of returned products (468 items).
+* **Highest financial loss:** China recorded the highest financial loss caused by returned products ($27,395.20).
