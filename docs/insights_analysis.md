@@ -1,7 +1,6 @@
 # Exploratory Data Analysis (EDA) Summary
 
 # Discount Analysis
-
 ## 1. Overview
 * The average discount across the entire dataset is 14%.
 * 43.71% of products have at least one discount applied, with 25% receiving discounts greater than 20%.
@@ -12,7 +11,6 @@
 
 
 ## 2. Market Analysis
-
 * **EMEA:** Discounts apply to 32.62% of products. The p75 is at 60%, and the maximum is 70%, generating a profit erosion of 83.77%.
 * **Africa:** 77% of orders are at full price (p75 = 0.0%), but the remaining 23% have discounts up to 70%. The average discount is 16%, and profit erosion reaches 61.27%.
 * **US & APAC:** More than half of the orders have discounts (APAC: 58.62%, US: 51.99%). These are the only markets with a median discount greater than 0.
@@ -20,9 +18,7 @@
 * **Canada:** 0% discounts and low order volume.
 
 ## 3. Country Analysis
-
 ### Top Countries with Net Losses
-
 * **Turkey (EMEA):** 1,378 orders (100% discounted). Fixed discount: 60%. Net loss: -$98,447.23. Total discounts given: $162,761.94. Profit erosion: 253.07%.
 * **Nigeria (Africa):** 905 orders (100% discounted). Fixed discount: 70%. Net loss: -$80,750.72. Total discounts given: $126,817.48. Profit erosion: 275.29%.
 * **Netherlands (EU):** 407 orders (100% discounted). Average discount: 48% (median 50%). Net loss: -$38,991.19. Total discounts given: $70,962.91.
@@ -35,7 +31,6 @@
 * **Venezuela (LATAM):** 181 orders (100% discounted). Average discount: 41% (minimum 40%). Net loss: -$11,029.88. Profit erosion: 199.49%.
 
 ### Other Regional Country Insights
-
 * **Turkmenistan, Kazakhstan, Tajikistan, Yemen, UAE, Lithuania:** The top 9 countries globally by profit erosion (Turkmenistan: 331.43%, Kazakhstan: 294.72%, Tajikistan: up to 331.43%) have a fixed discount of 70% applied to all orders.
 * **Uganda:** 37 orders, fixed discount 70%, net loss -$2,426.08, profit erosion: 278.59%.
 * **Indonesia:** 1,315 orders (100% discounted), positive net profit: +$14,900. Minimum discount: 7%, median: 27%, discount losses: $113,000.
@@ -45,33 +40,27 @@
 * **Portugal:** 100% discounted orders with a fixed discount of 50%. Profit erosion: 235.94%.
 
 ## 4. Category and Sub-Category Analysis
-
 ### By Category
-
 * **Furniture:** 54.41% discounted products. Actual profit: $264,704.59 (out of a potential $1.16 million). Profit erosion: 77.25%.
 * **Technology:** 47.94% discounted products. Maximum discount: 70%. Net profit: $623,635.62. Profit erosion: 54.41%.
 * **Office Supplies:** 38.98% discounted products (over 18,000 orders without discount). Maximum discount: 80%. Profit erosion: 56.87%.
 
 ### By Sub-Category
-
 * **Tables:** Net profit: -$61,118.64 (the only sub-category in the negative). Discounted orders: 75.49% (p25 = 20%). Average discount: 29%. Profit erosion: 124.83%.
 * **Discounted orders (%):** Tables (75.49%), Chairs (61.40%), Copiers (59.87%), Bookcases (53.00%), Phones (50.09%), Machines (49.26%).
 * **Profit Erosion (%):** Machines (78.12%), Binders (69.14%).
 * **Resistance to discounting:** Paper (32.37% erosion) and Labels (39.99% erosion), both having over 63% of orders sold without a discount.
 
 ## 5. Top Volume Customer Analysis
-
 * The top 5 customers by volume of discounted orders (Greg Matthias, Carlos Soltero, Harry Greene, Joy Smith, Tracy Blumstein) have over 53% of products bought at a discount.
 * These customers receive maximum discounts between 60% and 80%, leading to a profit erosion of over 100% and generating direct net financial losses.
 
 ## 6. Correlation Analysis
-
 * **Discount vs Quantity:** Values between -0.07 and 0.03 (almost zero correlation across all dimensions).
 * **Discount vs Shipping Cost:** Values between -0.26 and 0.00 (very low correlation).
 * **Discount vs Profit Margin:** Values between -0.77 and -0.94 (extremely strong negative correlation).
 
 ### Discount vs Profit by Market
-
 * **LATAM:** -0.42
 * **Africa:** -0.39
 * **EMEA:** -0.38
@@ -80,25 +69,21 @@
 * **Canada:** NaN (0% discount)
 
 ### Discount vs Profit Margin by Market
-
 * **Africa:** -0.94
 * **EMEA:** -0.91
 * **APAC:** -0.77
 
 ### Sub-Category Correlations
-
 * **Tables:** -0.68 with profit and -0.26 with shipping cost.
 * **Binders:** -0.17 with profit and -0.89 with profit margin.
 * **Other high correlations with profit:** Fasteners (-0.61), Bookcases (-0.56), Envelopes (-0.54).
 
 ### Operational Groupings (order_priority, order_day_name, ship_mode)
-
 * **Discount vs Profit Margin:** fixed between -0.83 and -0.85.
 * **Discount vs Quantity:** between -0.03 and 0.03.
 * **Discount vs Shipping Cost:** between -0.07 and -0.09.
 
 ## 7. Time-Series Analysis
-
 * Even though profit increases year over year, 2013 has the lowest profit erosion rate and the fewest discounted orders (42.84%). On the other hand, 2014, which has the highest total profit and is the last year, ranks second in terms of profit erosion and number of discounted products. The same pattern applies to the profit margin: 2014 has an actual profit margin of 11.54% (with a potential of 25.53%), while 2013 achieves an actual profit margin of 11.89% (with a potential of 25.61%).
 * The worst year is the first one, 2011, which had the highest share of discounted products (44.49%) and the largest profit erosion (65.54%). It recorded an actual profit margin of only 10.90%, despite a very high potential of 26.21% (in fact, 2011 had the highest potential profit margin, meaning it lost the most money because of discounts).
 * Overall, we can see higher numbers for total profit and profit margin each year, as well as lower profit erosion. The only exception is between 2013 and 2014: even though 2014 made the highest total profit, 2013 was better at controlling and managing discounts.
@@ -108,14 +93,12 @@
 # Shipping cost Analysis
 
 ## 1. Overview
-
 - 75% of orders have a shipping cost of $24.14 or less. The remaining 25% of orders cost between $24.14 and $933.57.
 - The average shipping cost is $26.17 (with a median of $7.69 and a total cost of $1,283,490.75).
 - The average shipping ratio is 0.1092. This means that, on average, the shipping cost is about 11% of the final price (for example, a $100 product costs around $11 to ship).
 - 50% of orders have a shipping ratio below 9.02%, while the other 50% are above 9.02%. Additionally, 25% of orders have a shipping ratio higher than 13.64%.
 
 ## 2. Correlation & ANOVA Analysis
-
 - **Shipping Cost vs. Quantity:** The correlation is 0.27, which means the number of items ordered has only a small impact on the shipping cost.
 - **Shipping Cost vs. Sales:** The correlation is 0.77, showing that higher sales values usually come with higher shipping costs.
 - **Shipping Cost vs. Profit:** The correlation is 0.35, indicating a weak positive relationship between shipping costs and profit.
@@ -124,27 +107,23 @@
 - **Shipping Cost vs. Sub-Category:** The p-value is 0.0 (F-statistic: 636.41), proving that certain product types are much more expensive to ship than others.
 
 ## 3. Order Priority Analysis
-
 - On average, orders marked as Critical have a shipping ratio of 25% and an average shipping cost of $59.26 (more than three times higher than Medium priority).
 - There is an unexpected pattern between Low and Medium priorities. Medium priority has an average shipping cost of $18.34 (8% shipping ratio), while Low priority is more expensive at $26.56 (12% shipping ratio). However, Medium and High priorities generate the highest total shipping costs ($516,293.28 and $483,552.75) due to higher order volumes.
 - All four priority categories reach very similar maximum shipping costs, ranging between $867.69 and $933.57.
 
 
 ## 4. Ship Mode Analysis
-
 - The distribution of shipping costs follows a logical order based on delivery speed. Same Day is the most expensive with an average cost of $42.25, followed by First Class at $40.93, Second Class at $30.33, and Standard Class at $19.78.
 - Standard Class generates the highest total shipping cost ($582,988.00) because it is the most frequently used shipping method.
 - There is a very small difference between Same Day and First Class, as both share the exact same average shipping ratio of 18% (and a global ratio of 17%). Even more surprisingly, the median cost for First Class ($12.58) is slightly higher than for Same Day ($12.19), meaning 50% of First Class orders cost more than $12.58, compared to $12.19 for Same Day.
 
 ## 5. Market Analysis
-
 - All seven markets have the exact same average shipping ratio of 11% (and a median of 9%), showing a balanced pricing structure where shipping costs scale proportionally with order value across all regions.
 - APAC has the highest average shipping cost at $34.93 per order, as well as the highest total shipping cost ($358,116.66), followed by the EU with an average of $30.52.
 - Surprisingly, the US ranks third highest with an average shipping cost of $23.83 (and holds the highest single maximum shipping cost at $933.57), even though Global Superstore is a US-based company.
 - EMEA has the lowest average shipping cost at $17.53 per order, while Canada has the lowest total shipping cost ($7,405.63) due to its very low order volume.
 
 ## 6. Country Analysis
-
 - **Highest Average Shipping Cost:** The country with the highest average shipping cost is Taiwan ($167.36), followed by Chad ($148.97), Lesotho ($135.65), Montenegro ($93.94), and Slovenia ($61.22).
 - **Top 20 Countries by Market:** Looking at the top 20 countries with the highest average shipping costs, 7 are from APAC, 7 from Africa, 5 from EMEA, and 1 from LATAM.
 - **Highest Average Shipping Ratio:** Taiwan also has the highest average shipping ratio at 20% (meaning shipping represents 20% of the sales value), followed by Lebanon (17%), Central African Republic (16%), and Djibouti (15%).
@@ -152,7 +131,6 @@
 - **Highest Total Shipping Costs:** The countries generating the highest total shipping costs due to high order volumes are the United States ($238,173.80), Australia ($96,488.61), France ($88,502.45), China ($65,606.79), Germany ($60,686.80), and India ($59,638.01).
 
 ## 7. Category and Sub-Category Analysis
-
 - **Shipping Ratio:** All categories and sub-categories have the exact same average shipping ratio of 11%, showing that shipping costs remain proportional to product prices across all product types.
 - **Category Average Costs:** Technology has the highest average shipping cost at $49.92, followed closely by Furniture at $44.32, while Office Supplies is the cheapest category to ship at $12.80. However, due to high order volumes, Office Supplies still generates a large total shipping cost ($383,569.72), close to Furniture ($417,026.56).
 - **Most Expensive Sub-Categories:** Based on average shipping cost, the most expensive sub-categories are Tables ($93.17), Copiers ($71.52), Bookcases ($63.98), Appliances ($60.27), and Phones ($54.98). Notably, 25% of Tables orders cost over $110.33 to ship, which strongly contributes to its negative net profit when combined with heavy discounts.
@@ -160,12 +138,10 @@
 
 
 ## 8. Order Year Analysis
-
 - Shipping costs remained remarkably consistent over the years. The average shipping cost stayed stable between $25.95 and $26.83, and the average shipping ratio stayed flat at 11% across all four years (2011 to 2014).
 
 
 ## 9. Outliers Analysis
-
 - **High financial impact from few orders:** Although outliers represent only 8% to 10% of total orders across all sub-categories, they account for an enormous share of total shipping expenses, ranging from 33% to 60%.
 - **Binders sub-category:** Binders has the highest outlier impact, where just 581 outlier orders generate 60% ($27,933.64) of the sub-category's total shipping cost.
 - **Outlier Thresholds (Upper Bound):** The shipping cost threshold to be classified as an outlier varies greatly by product type, from just $7.81 for Labels to $235.67 for Tables and $188.17 for Copiers, reflecting differences in physical size and weight.
@@ -199,3 +175,62 @@
 * **Highest return rate & erosion:** Japan has the highest return rate (28.80%) and the highest profit erosion (41.20%).
 * **Most returned products:** Mexico is the country with the highest volume of returned products (468 items).
 * **Highest financial loss:** China recorded the highest financial loss caused by returned products ($27,395.20).
+
+
+## 6. Sub-Category and Category Analysis
+* **Highest profit erosion (sub-categories):** The sub-categories with the highest profit erosion are Appliances (11.34%), Supplies (11.05%), and Fasteners (10.80%), all belonging to the Office Supplies category.
+* **Highest return rates (sub-categories):** The highest return rates are in Fasteners (6.53%, Office Supplies), Copiers (5.85%, Technology), and Envelopes (5.46%, Office Supplies).
+* **Most returned products (sub-categories):** The highest number of returned items comes from Binders (201), Storage (192), and Art (175), all under Office Supplies.
+* **Highest profit lost (sub-categories):** Appliances ($16,072.11), Copiers ($15,352.45), and Bookcases ($13,001.98) show the highest lost profit.
+* **Category insights:** Office Supplies has the most returned products (1,310). Technology has the highest lost profit ($40,143.11) and the highest potential profit margin (13.99%). Furniture has the highest return rate (4.72%) and the highest profit erosion (7.19%).
+
+## 7. Year Analysis
+* Return rate trend: The product return rate rose from 4.42% in 2011 to 4.85% in 2012, then dropped to 4.39% in 2013 and 4.03% in 2014, showing an overall improvement by the end of the period.
+* Profit erosion by year: The highest profit erosion happened in 2012 (8.11%), followed by 2014 (6.70%), while 2013 had the lowest profit erosion (4.93%).
+
+<br><br><br>
+
+# Performance Analysis
+## 1. Overview
+- **Scale and reach:** The dataset contains 51,290 rows and 39 columns across 1,430 unique days and 147 countries, with 1,590 unique customers, 10,227 unique products, 169,620 units sold, and 24,847 net orders (25,754 gross).
+- **Performance and profitability:** 74.12% of order lines are profitable and 25.88% are loss-making, with an overall profit margin of 11.43%, $483.16 average revenue per order ($55.24 average profit), and $7,550.29 average revenue per customer ($863.22 average profit).
+- **Returns impact:** Returns account for a 3.52% rate (907 orders, 2,243 items, 8,692 quantity), causing $94,935.33 in total returned loss.
+
+## 2. Order Priority Analysis
+* **Order volume share:** The Medium order priority class has the highest share of orders at 57.25%, while the Low priority class has the lowest share at 4.72%.
+* **Highest profit margin:** The Critical class has the highest profit margin, reaching 12.78%.
+
+## 3. Ship Mode Analysis
+* **Order volume share:** Standard Class has the largest share of orders at 59.95%, while Same Day has the smallest share at 5.23%.
+
+## 4. Segment analysis
+* **Largest segment by volume:** The Consumer (B2C) segment has the largest order share at 51.70%, and it also leads in total quantity, order count, and total profit.
+* **Profit margin:** The Home Office segment has the highest profit margin at 11.78%, though it is still fairly close to the other segments.
+
+## 5. Market analysis
+* **Top market overall:** APAC has the highest number of orders (5,153), the largest item volume (38,216), and the highest total profit ($390,847.84).
+* **Strong EU profitability:** Even though the EU ranks 4th in order count (4,843), it ranks 2nd in total profit, reaching $344,111.25.
+* **Highest profit margins:** Despite having the lowest order volume, Canada achieves the highest profit margin at 26.62%, followed by the EU at 12.54%.
+
+## 6. Country analysis
+- **Top countries by order volume:** The United States has the highest order volume (5,009 orders, 20.16% share), followed by France (1,374 orders, 5.53%) and Australia (1,368 orders, 5.51%).
+- **Highest total profit:** The countries generating the highest total profit are the US ($286,397.03), India ($125,492.33), China ($123,287.88), the UK ($106,067.74), Germany ($100,858.43), France ($100,528.45), and Australia ($99,504.16).
+- **Highest profit margins:** The top countries by profit margin are Russia, Canada, Malaysia, Morocco, Austria, Iraq, Bangladesh, Democratic Republic of the Congo, Poland, and Cuba, with margins ranging between 24.48% and 27.18%.
+
+## 7. Sub-category and category analysis
+- **Top sub-categories by order volume:** *Binders* (5,255 orders, 11.54% volume share), *Storage* (4,408 orders, 9.68% volume share), and *Art* (4,256 orders, 9.35% volume share) lead in order count and total quantity.
+- **Highest total profit sub-categories:** *Copiers* ($243,215.09), *Phones* ($204,221.73), and *Bookcases* ($148,922.44) generate the highest total profit.
+- **Profit margin extremes:** *Paper* (24.58%), *Labels* (20.52%), and *Envelopes* (17.21%) have the highest profit margins, while *Tables* is the only loss-making sub-category with a -8.47% profit margin (-$61,118.64).
+- **Category overview:** *Office Supplies* has the largest order volume (54.02% share), while *Technology* leads in total profit ($623,635.62) and profit margin (13.83%), and *Furniture* has the lowest profit margin (6.78%).
+
+## 8. Year analysis
+- **Steady volume growth:** Order volume and quantity increase every year, rising from 4,358 orders (17.54% volume share) in 2011 to 8,570 orders (34.49% volume share) in 2014.
+- **Sales and profit growth:** Total sales and total profit also grow year over year, peaking in 2014 with $4,078,094.00 in sales and $470,411.19 in profit.
+- **Profit margin trend:** The highest profit margin was in 2013 at 11.89%, followed by 2014 (11.54%), 2012 (11.12%), and 2011 (10.90%).
+
+## 9. Customers analysis
+- **Slow customer growth:** Total active customers grow steadily but moderately over time, rising from 1,308 in 2011 to 1,511 in 2014.
+- **2012 shift:** In 2012, 211 new customers join, 1,160 stay loyal, and 148 churn.
+- **2013 reactivation:** In 2013, only 56 new customers join, while 131 inactive customers are reactivated and churn drops to 118.
+- **2014 retention peak:** In 2014, new acquisitions drop to just 15, but 1,386 customers remain loyal, 110 return, and churn falls further to 79.
+- **Key takeaway:** Over the years, new customer acquisition slows down significantly, churn decreases steadily, and growth relies mainly on loyalty and reactivation.
