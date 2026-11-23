@@ -152,7 +152,7 @@
 # Returned products Analysis
 
 ## 1. Overview
-* **Orders and returns:** Out of 25,754 total orders, 907 were returned. This means 8,692 items came back, leaving 24,847 completed orders.
+* **Orders and returns:** Out of 25,754 total orders, 907 were returned. This means 907 orders came back, leaving 24,847 completed orders.
 * **Low return rate:** The return rate is low at 3.52%, which is a good sign.
 * **Lost profit:** Returns caused a profit loss of $94,935.25 (a 6.47% loss from the potential profit).
 * **Profit margins:** The actual profit margin is 11.43%, very close to the 11.61% potential margin, showing that returns do not hurt the final profit very much.
@@ -160,33 +160,33 @@
 ## 2. Point-Biserial Correlation & Logistic Regression Analysis
 * **Weak overall relationships:** Even though some variables have a p-value below 0.05, their coefficients are extremely close to zero. This means no strong or meaningful relationships were found between most dataset variables and the return variable.
 * **Notable exceptions:** The only slightly stronger patterns appear in the Fasteners sub-category and in specific countries like Japan, Hong Kong, Mexico, and China.
-* **Higher coefficients:** These specific countries and sub-categories show higher coefficients mainly because they record higher volumes of returned products compared to others.
+* **Higher coefficients:** These specific countries and sub-categories show higher coefficients mainly because they record higher volumes of returned orders compared to others.
 
 ## 3. Order Priority Analysis
-* **Return Rates:** All four priority categories show a very similar product return rate (around 4.1% to 4.7%).
+* **Return Rates:** All four priority categories show a very similar orders return rate (around 3.47% to 3.75%).
 * **Profit Erosion:** Profit erosion differs across categories. While the overall average is 6.47%, the Low priority class is the most affected, with a profit erosion of 11.74%.
-* **Profit Margins:** There is a small anomaly where the Critical class has a higher actual profit margin (12.78%) than its potential profit margin (12.60%). This is probably because a large part of the returned products with this order priority were originally causing losses, and returning them actually improved the final margin.
+* **Profit Margins:** There is a small anomaly where the Critical class has a higher actual profit margin (12.78%) than its potential profit margin (12.60%). This is probably because a large part of the returned orders with this order priority were originally causing losses, and returning them actually improved the final margin.
 
 ## 4. Market Analysis
-* **Regions with returns:** The only regions that recorded returned products are LATAM, APAC, and EU (while Canada, Africa, EMEA, and the US have 0 returns).
+* **Regions with returns:** The only regions that recorded returned orders are LATAM, APAC, and EU (while Canada, Africa, EMEA, and the US have 0 returns).
 * **Highest profit erosion:** The region with the highest profit erosion is APAC, reaching 10.67%.
 
 ## 5. Country Analysis
-* **Highest return rate & erosion:** Japan has the highest return rate (28.80%) and the highest profit erosion (41.20%).
-* **Most returned products:** Mexico is the country with the highest volume of returned products (468 items).
+* **Highest return rate & erosion:** Japan has the highest return rate (21.09%) and the highest profit erosion (41.20%).
+* **Most returned products:** Mexico is the country with the highest volume of returned orders (175 orders).
 * **Highest financial loss:** China recorded the highest financial loss caused by returned products ($27,395.20).
 
 
 ## 6. Sub-Category and Category Analysis
 * **Highest profit erosion (sub-categories):** The sub-categories with the highest profit erosion are Appliances (11.34%), Supplies (11.05%), and Fasteners (10.80%), all belonging to the Office Supplies category.
-* **Highest return rates (sub-categories):** The highest return rates are in Fasteners (6.53%, Office Supplies), Copiers (5.85%, Technology), and Envelopes (5.46%, Office Supplies).
-* **Most returned products (sub-categories):** The highest number of returned items comes from Binders (201), Storage (192), and Art (175), all under Office Supplies.
+* **Highest return rates (sub-categories):** The highest return rates are in Fasteners (6.37%, Office Supplies), Copiers (5.69%, Technology), and Envelopes (5.44%, Office Supplies).
+* **Most returned products (sub-categories):** The highest number of returned orders comes from Binders (183), Storage (166), and Art (155), all under Office Supplies.
 * **Highest profit lost (sub-categories):** Appliances ($16,072.11), Copiers ($15,352.45), and Bookcases ($13,001.98) show the highest lost profit.
-* **Category insights:** Office Supplies has the most returned products (1,310). Technology has the highest lost profit ($40,143.11) and the highest potential profit margin (13.99%). Furniture has the highest return rate (4.72%) and the highest profit erosion (7.19%).
+* **Category insights:** Office Supplies has the most returned orders (724). Technology has the highest lost profit ($40,143.11) and the highest potential profit margin (13.99%). Technology has the highest return rate (4.32%) and Furniture has the highest profit erosion (7.19%).
 
 ## 7. Year Analysis
-* Return rate trend: The product return rate rose from 4.42% in 2011 to 4.85% in 2012, then dropped to 4.39% in 2013 and 4.03% in 2014, showing an overall improvement by the end of the period.
-* Profit erosion by year: The highest profit erosion happened in 2012 (8.11%), followed by 2014 (6.70%), while 2013 had the lowest profit erosion (4.93%).
+* **Return rate trend:** The orders return rate increased from 3.50% in 2011 to 3.69% in 2012, then edged down to 3.61% in 2013 and 3.36% in 2014, showing an overall improvement by the end of the period.
+* **Profit erosion by year:** The highest profit erosion happened in 2012 (8.11%), followed by 2014 (6.70%) and 2011 (6.51%), while 2013 had the lowest profit erosion (4.93%).
 
 <br><br><br>
 
